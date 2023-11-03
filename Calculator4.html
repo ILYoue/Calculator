@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter Expression:</td>
+            <td> <input type="text" name="expression" id="expression"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:center"> 
+                <button type="button" name="evalbut" onclick="EvalExpression()">Evaluate</button> 
+            </td>
+        </tr>
+
+    </table>
+
+    <script type="text/javascript">
+        function EvalExpression()
+        {
+            var expression = document.getElementById("expression").value;
+            document.getElementById("expression").value = eval(expression);
+        }
+    </script>
+</body>
+</html>

@@ -19,14 +19,14 @@
         <tr>
             <td></td>
             <td style="text-align:center"> 
-                <button type="button" name="evalbut" onclick="EvalExpression()">Evaluate</button> 
+                <button type="button" name="evalbut" onclick="Evaluation()">Evaluate</button> 
             </td>
         </tr>
 
     </table>
 
     <script type="text/javascript">
-        function EvalExpression()
+        function Evaluation()
         {
             var expression = document.getElementById("expression").value;
             document.getElementById("expression").value = eval(expression);
